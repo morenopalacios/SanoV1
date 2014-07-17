@@ -1,1 +1,1 @@
-json.extract! @funcionario, :id, :nombres, :apellidos, :indentificacion, :telefono, :mail, :codigo, :EPS, :IPS, :centro_id, :tipodoc_id, :created_at, :updated_at
+json.extract! @funcionario, :id, :nombres, :apellidos, :tipodoc_id, :identificacion, :telefono, :mail, :centro_id, :codigo, :eps, :afp, :arl, :lugar_de_expedicion, :lugar_de_nacimiento, :fecha_de_nacimiento, :edad, :area, :fecha_de_ingreso, :antiguedad, :funciones_principales, :created_at, :updated_at

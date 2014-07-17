@@ -3,23 +3,41 @@
 one:
   nombres: MyString
   apellidos: MyString
-  indentificacion: MyString
+  tipodoc_id: 
+  identificacion: MyString
   telefono: MyString
   mail: MyString
-  codigo: MyString
-  EPS: MyString
-  IPS: MyString
   centro_id: 
-  tipodoc_id: 
+  codigo: MyString
+  eps: MyString
+  afp: MyString
+  arl: MyString
+  lugar_de_expedicion: MyString
+  lugar_de_nacimiento: MyString
+  fecha_de_nacimiento: 2014-06-16
+  edad: MyString
+  area: MyString
+  fecha_de_ingreso: 2014-06-16
+  antiguedad: MyString
+  funciones_principales: MyString
 
 two:
   nombres: MyString
   apellidos: MyString
-  indentificacion: MyString
+  tipodoc_id: 
+  identificacion: MyString
   telefono: MyString
   mail: MyString
-  codigo: MyString
-  EPS: MyString
-  IPS: MyString
   centro_id: 
-  tipodoc_id: 
+  codigo: MyString
+  eps: MyString
+  afp: MyString
+  arl: MyString
+  lugar_de_expedicion: MyString
+  lugar_de_nacimiento: MyString
+  fecha_de_nacimiento: 2014-06-16
+  edad: MyString
+  area: MyString
+  fecha_de_ingreso: 2014-06-16
+  antiguedad: MyString
+  funciones_principales: MyString

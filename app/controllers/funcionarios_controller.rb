@@ -69,6 +69,6 @@ class FuncionariosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def funcionario_params
-      params.require(:funcionario).permit(:nombres, :apellidos, :indentificacion, :telefono, :mail, :codigo, :EPS, :IPS, :centro_id, :tipodoc_id)
+      params.require(:funcionario).permit(:nombres, :apellidos, :tipodoc_id, :identificacion, :genero, :telefono, :mail, :cargo, :centro_id, :codigo, :eps, :afp, :arl, :lugar_de_expedicion, :lugar_de_nacimiento, :fecha_de_nacimiento, :edad, :area, :fecha_de_ingreso, :antiguedad, :funciones_principales)
     end
 end

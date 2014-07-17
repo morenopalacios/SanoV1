@@ -18,15 +18,57 @@
   <div class="field">
     <%= f.label :apellidos %><br>
     <%= f.text_field :apellidos %>
-   </div>
-   <div class="field">
-   Tipodo de documento  <br>
-	<%= f.collection_select :tipodoc_id, Tipodoc.all, :id, :nombre, class: "form-control", prompt:
-	"Seleccione documento" %>
   </div>
   <div class="field">
-    <%= f.label :indentificacion %><br>
-    <%= f.text_field :indentificacion %>
+    Tipodoc <br> 
+  <%= f.collection_select :tipodoc_id, Tipodoc.all, :id, :nombre, class: "form-control", prompt:
+  "Seleccione tipo de documento " %>
+  </div>
+  <div class="field">
+    <%= f.label :identificacion %><br>
+    <%= f.text_field :identificacion %>
+
+    <div class="field">
+    <%= f.label :lugar_de_expedicion %><br>
+    <%= f.text_field :lugar_de_expedicion %>
+  </div>
+  <div class="field">
+    <%= f.label :lugar_de_nacimiento %><br>
+    <%= f.text_field :lugar_de_nacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_de_nacimiento %><br>
+    <%= f.date_select :fecha_de_nacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :edad %><br>
+    <%= f.text_field :edad %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :cargo %><br>
+    <%= f.text_field :cargo%>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_de_ingreso %><br>
+    <%= f.date_select :fecha_de_ingreso %>
+  </div>
+  <div class="field">
+    <%= f.label :antiguedad %><br>
+    <%= f.text_field :antiguedad %>
+  </div>
+  <div class="field">
+    <%= f.label :funciones_principales %><br>
+    <%= f.text_field :funciones_principales %>
+  </div>
+  </div>
+  <div class="field">
+   Genero<br>
+    Masculino: <%= f.radio_button(:genero, true) %>
+    Femenino: <%= f.radio_button(:genero, false) %>
   </div>
   <div class="field">
     <%= f.label :telefono %><br>
@@ -36,25 +78,29 @@
     <%= f.label :mail %><br>
     <%= f.text_field :mail %>
   </div>
+   <div class="field">
+  Centro <br>
+  <%= f.collection_select :centro_id, Centro.all, :id, :nombre, class: "form-control", prompt:
+  "Seleccione Centro" %>
+   </div>
   <div class="field">
     <%= f.label :codigo %><br>
     <%= f.text_field :codigo %>
   </div>
   <div class="field">
-    <%= f.label :EPS %><br>
-    <%= f.text_field :EPS %>
+    <%= f.label :eps %><br>
+    <%= f.text_field :eps %>
   </div>
   <div class="field">
-    <%= f.label :IPS %><br>
-    <%= f.text_field :IPS %>
-  </div> 
-   <div class="field">
-	Centro <br>
-	<%= f.collection_select :centro_id, Centro.all, :id, :nombre, class: "form-control", prompt:
-	"Seleccione Centro" %>
-   </div>
+    <%= f.label :afp %><br>
+    <%= f.text_field :afp %>
+  </div>
+  <div class="field">
+    <%= f.label :arl %><br>
+    <%= f.text_field :arl %>
+  </div>
+  
   <div class="actions">
- 
-    <%= f.submit "Registrar"%>
+    <%= f.submit "Guardar" %>
   </div>
 <% end %>

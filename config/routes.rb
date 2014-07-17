@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
+  resources :incidentes
+
   resources :funcionarios
+
+  resources :riesgos
+
+  resources :incapacidads
+
+  resources :enfermedads
+
+  resources :personalinvolucrados
+
+  resources :tiponovedads
 
   resources :tipodocs
 
@@ -11,7 +23,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+   root 'funcionarios#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
